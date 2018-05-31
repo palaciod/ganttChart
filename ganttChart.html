@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="ganttChart.css">
+<title>Gantt Chart</title>
+<!-- Folder div Begins -->
+<div class="folder">
+  <div id="tabMenu">
+    <div id="insideTheClassroom" type="button" class="tab">Inside The Classroom</div>
+    <div id="alongsideTheClassroom" class="tab">Alongside The Classroom</div>
+    <div id="outsideTheClassroom" class="tab">Outside The Classroom</div>
+    <div id="careerFocus" class="tab">Career Focus</div>
+  </div>
+<!-- ganttChart layout begins -->
+<div id="myGanttChart">
+  <!-- First Layout Begins -->
+  <div id="y-table">
+      <!-- It's filled with a color of grey for the meantime. I am first going to create the contents of table y -->
+      <div id="ySector">
+        <div class="semesterSector">
+          <div  id="summer0" class="academicSector" style="color: #e56a54">Summer Before You Start</div>
+        </div>
+        <div class="semesterSector" style="background-color: #E8E8E8">
+          <div id="fall0" class="academicSector" style="color: #00a69c">Fall Semester 1</div>
+        </div>
+        <div class="semesterSector">
+          <div id="winter0" class="academicSector" style="color: #ffc72c">First Winter Session</div>
+        </div>
+        <div class="semesterSector" style="background-color: #E8E8E8">
+          <div id="spring0" class="academicSector" style="color: #2f9fd0">Spring Semester 2</div>
+        </div>
+        <div class="semesterSector">
+          <div id="summer1" class="academicSector" style="color: limegreen">Summer Session</div>
+        </div>
+        <div class="semesterSector" style="background-color: #E8E8E8">
+          <div id="fall1" class="academicSector" style="color: darkorchid">Fall Semester 3</div>
+        </div>
+        <div class="semesterSector">
+          <div id="winter1" class="academicSector" style="color: blue">Second Winter Session</div>
+        </div>
+        <div class="semesterSector" style="background-color: #E8E8E8">
+          <div id="spring1" class="academicSector" style="color: orange">Spring Semester 4</div>
+      </div>
+    </div>
+    <div id="verticalBreak"></div>
+  </div>
+  <!-- Second Layout Begins. This is where we seperate the progress bars with the timeline(indepent variable) at the bottom. -->
+  <div id="x-table">
+    <!-- barTable Layout begins -->
+    <div id="barTable">
+      <div class="barSector">
+        <div id="pop0" class="popUp">Accounting prep, if you need it.</div>
+        <div id="summerBeforeYouStart" class="bar"></div>
+      </div>
+      <div class="barSector" style="background-color: #E8E8E8">
+        <div id="pop1" class="popUp">15 Core Credits.</div>
+        <div id="fallSemester0" class="bar"></div>
+      </div>
+      <div class="barSector">
+        <div id="pop2" class="popUp">eLab</div>
+        <div id="winterBreak0" class="bar"></div>
+      </div>
+      <div class="barSector" style="background-color: #E8E8E8">
+        <div id="pop3" class="popUp">10 Core Credits, 5-6 Elective Credits</div>
+        <div id="springSemester0" class="bar"></div>
+      </div>
+      <div class="barSector">
+        <div id="pop4" class="popUp">MBA Internship: Whether you are advancing, switching or launching your career, our UBMBAs participate in a summer internship Networking Events Enjoy the Summer! Travel, relax, have fun!</div>
+        <div id="summerSession" class="bar"></div>
+      </div>
+      <div class="barSector" style="background-color: #E8E8E8">
+        <div id="pop5" class="popUp">15 Elective Credits</div>
+        <div id="fallSemester1" class="bar"></div>
+      </div>
+      <div class="barSector">
+        <div id="pop6" class="popUp">Something</div>
+        <div id="winterBreak1" class="bar"></div>
+      </div>
+      <div class="barSector" style="background-color: #E8E8E8">
+        <div id="pop7" class="popUp">Capstone: 2 Core Credits, 13 Elective Credits, Commencement!</div>
+        <div id="springSemester1" class="bar"></div>
+      </div>
+    </div>
+    <!-- barTable Layout ends -->
+    <!-- timeLine Layout begins -->
+    <div id="timeLine">
+      <hr>
+      <!-- year1 layout begins -->
+      <!-- This where the months will be located in. Hence the id name timeLine -->
+      <div id="year1">
+        <!-- Months from July-> June -->
+        <div class="month">
+          Jul
+        </div>
+        <div class="month">
+          Aug
+        </div>
+        <div class="month">
+          Sept
+        </div>
+        <div class="month">
+          Oct
+        </div>
+        <div class="month">
+          Nov
+        </div>
+        <div class="month">
+          Dec
+        </div>
+        <div class="month">
+          Jan
+        </div>
+        <div class="month">
+          Feb
+        </div>
+        <div class="month">
+          Mar
+        </div>
+        <div class="month">
+          Apr
+        </div>
+        <div class="month">
+          May
+        </div>
+        <div class="month">
+          Jun
+        </div>
+        <h4 id="mbaYear">MBA Year 1</h4>
+      </div>
+      <!-- year1 layout ends -->
+      <div id="year2">
+        <!-- Months from July-> June -->
+        <div class="month">
+          Jul
+        </div>
+        <div class="month">
+          Aug
+        </div>
+        <div class="month">
+          Sept
+        </div>
+        <div class="month">
+          Oct
+        </div>
+        <div class="month">
+          Nov
+        </div>
+        <div class="month">
+          Dec
+        </div>
+        <div class="month">
+          Jan
+        </div>
+        <div class="month">
+          Feb
+        </div>
+        <div class="month">
+          Mar
+        </div>
+        <div class="month">
+          Apr
+        </div>
+        <div class="month">
+          May
+        </div>
+        <div class="month">
+          Jun
+        </div>
+        <h4 id="mbaYear">MBA Year 2</h4>
+      </div>
+      <!-- year2 layout ends -->
+    </div>
+    <!-- timeLine Layout ends -->
+  </div>
+  <!-- First Layout Ends -->
+</div>
+</div>
+<script src="jquery.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#pop6').hide();
+    $('#summerBeforeYouStart').on('mouseenter',function(){
+      $('#summerBeforeYouStart').css({
+          opacity: '0.5'
+      });
+      $('#pop0').css({
+        visibility: 'visible'
+      });
+    });
+
+
+    $('#fallSemester0').on('mouseenter',function(){
+      $('#fallSemester0').css({
+          opacity: '0.5'
+      });
+      $('#pop1').css({
+        visibility: 'visible'
+      });
+    });
+    $('#winterBreak0').on('mouseenter',function(){
+      $('#winterBreak0').css({
+          opacity: '0.5'
+      });
+      $('#pop2').css({
+        visibility: 'visible'
+      });
+    });
+    $('#springSemester0').on('mouseenter',function(){
+      $('#springSemester0').css({
+          opacity: '0.5'
+      });
+      $('#pop3').css({
+        visibility: 'visible'
+      });
+    });
+    $('#summerSession').on('mouseenter',function(){
+      $('#summerSession').css({
+          opacity: '0.5'
+      });
+      $('#pop4').css({
+        visibility: 'visible'
+      });
+    });
+    $('#fallSemester1').on('mouseenter',function(){
+      $('#fallSemester1').css({
+          opacity: '0.5'
+      });
+      $('#pop5').css({
+        visibility: 'visible'
+      });
+    });
+    $('#winterBreak1').on('mouseenter',function(){
+      $('#winterBreak1').css({
+          opacity: '0.5'
+      });
+      $('#pop6').css({
+        visibility: 'visible'
+      });
+    });
+    $('#springSemester1').on('mouseenter',function(){
+      $('#springSemester1').css({
+          opacity: '0.5'
+      });
+      $('#pop7').css({
+        visibility: 'visible'
+      });
+    });
+
+
+    // Below is the Mouse Leave events
+    $('#summerBeforeYouStart').on('mouseleave',function(){
+      $('#summerBeforeYouStart').css({
+          opacity: '1'
+      });
+      $('#pop0').css({
+        visibility: 'hidden'
+      });
+    });
+    $('#fallSemester0').on('mouseleave',function(){
+      $('#fallSemester0').css({
+          opacity: '1'
+      });
+      $('#pop1').css({
+        visibility: 'hidden'
+      });
+    });
+    $('#winterBreak0').on('mouseleave',function(){
+      $('#winterBreak0').css({
+          opacity: '1'
+      });
+      $('#pop2').css({
+        visibility: 'hidden'
+      });
+    });
+    $('#springSemester0').on('mouseleave',function(){
+      $('#springSemester0').css({
+          opacity: '1'
+      });
+      $('#pop3').css({
+        visibility: 'hidden'
+      });
+    });
+    $('#summerSession').on('mouseleave',function(){
+      $('#summerSession').css({
+          opacity: '1'
+      });
+      $('#pop4').css({
+        visibility: 'hidden'
+      });
+    });
+    $('#fallSemester1').on('mouseleave',function(){
+      $('#fallSemester1').css({
+          opacity: '1'
+      });
+      $('#pop5').css({
+        visibility: 'hidden'
+      });
+    });
+    $('#winterBreak1').on('mouseleave',function(){
+      $('#winterBreak1').css({
+          opacity: '1'
+      });
+      $('#pop6').css({
+        visibility: 'hidden'
+      });
+    });
+    $('#springSemester1').on('mouseleave',function(){
+      $('#springSemester1').css({
+          opacity: '1'
+      });
+      $('#pop7').css({
+        visibility: 'hidden'
+      });
+    });
+
+
+    // Tabs Below
+
+
+    $('#insideTheClassroom').on('click',function(){
+
+      $('#insideTheClassroom').css({
+          opacity: '.7'
+      });
+      $('#outsideTheClassroom').css({
+          opacity: '1'
+      });
+      $('#alongsideTheClassroom').css({
+          opacity: '1'
+      });
+      $('#careerFocus').css({
+          opacity: '1'
+      });
+      $('#pop0').html("Accounting prep, if you need it.");
+      $('#pop1').html("15 Core Credits");
+      $('#pop2').html("eLab");
+      $('#pop3').html("10 Core Credits, 5-6 Elective Credits");
+      $('#pop4').html("MBA Internship: Whether you are advancing, switching or launching your career, our UBMBAs participate in a summer internship Networking Events Enjoy the Summer! Travel, relax, have fun!");
+      $('#pop5').html("15 Elective Credits");
+      $('#pop6').hide();
+      //$('#winterBreak1').hide();
+      $('#pop7').html("Capstone: 2 Core Credits, 13 Elective Credits, Commencement!");
+    });
+
+    $('#outsideTheClassroom').on('click',function(){
+
+      $('#insideTheClassroom').css({
+          opacity: '1'
+      });
+      $('#outsideTheClassroom').css({
+          opacity: '.7'
+      });
+      $('#alongsideTheClassroom').css({
+          opacity: '1'
+      });
+      $('#careerFocus').css({
+          opacity: '1'
+      });
+      // $('#pop1').css({
+      //   width: '30%',
+      //
+      // });
+      $('#pop0').html("Welcome Cruise with 2nd Year UBMBAs.");
+      $('#pop1').html("Student Organization and Club Fair, \n\ Monthly GMA Social Events, Lanco Games (an MBA rite of passage, you’ll find out what it is later!), UB MBA GMA Buffalo Bills Game, Diwali Celebration, Festivus Winter Holiday Formal");
+      $('#pop2').html("A much-needed break from school! Put your feet up! Relax! Sleep in!");
+      $('#pop3').html("UBMBA Talent Show, Day of Giving Event, Soiree Spring Formal, UB MBA Spirit Week");
+      $('#pop4').html("MBA Internship: Whether you are advancing, switching or launching your career, our UBMBAs participate in a summer internship Networking Events Enjoy the Summer! Travel, relax, have fun!");
+      $('#pop5').html("New York City Finance and Law Immersion Semester in Manhattan. Student Organization and Club Fair. Monthly GMA Social Events. UB MBA GMA Buffalo Bills Game. Diwali Celebration. Festivus Winter Holiday Formal. ");
+      $('#pop6').hide();
+      $('#pop7').html("Celebrate your success! Day of Giving Evenet. Soiree Spring Formal.");
+    });
+
+    $('#alongsideTheClassroom').on('click',function(){
+
+      $('#insideTheClassroom').css({
+          opacity: '1'
+      });
+      $('#outsideTheClassroom').css({
+          opacity: '1'
+      });
+      $('#alongsideTheClassroom').css({
+          opacity: '.7'
+      });
+      $('#careerFocus').css({
+          opacity: '1'
+      });
+      $('#pop0').html("MBA Advantage and Orientation.");
+      $('#pop1').html("MBA Advantage Weekly Sessions. Corporate Champions. LeaderCORE Assessment. Networking Events.");
+      $('#pop2').html("MBA Advantage Career Focus. School of Management Alumni Association Networking.");
+      $('#pop3').html("Global Perspectives Spring Break Action International Learning Trip to places like Costa Rica or Prague and Budapest. LeaderCORE Development I. Networking Events. MBA Case Competitions");
+      $('#pop4').html("MBA Internship: Whether you are advancing, switching or launching your career, our UBMBAs participate in a summer internship Networking Events Enjoy the Summer! Travel, relax, have fun!");
+      $('#pop5').html("MBA Advantage. LeaderCORE Development 2. Networking Events.");
+      $('#pop6').show();
+      $('#pop6').html("Global Perspectives Spring Break Action International  Learning Trip to places like China or Ghana. School of Management Alumni Association Networking.");
+      $('#pop7').html("Global Perspectives Spring Break Action International  Learning Trip to places like Costa Rica or Prague and Budapest. LeaderCORE Certification. Networking Events. Become a UBMBA Alumnus and join SOMAA.");
+    });
+
+    $('#careerFocus').on('click',function(){
+
+      $('#insideTheClassroom').css({
+          opacity: '1'
+      });
+      $('#outsideTheClassroom').css({
+          opacity: '1'
+      });
+      $('#alongsideTheClassroom').css({
+          opacity: '1'
+      });
+      $('#careerFocus').css({
+          opacity: '.7'
+      });
+      $('#pop0').html("Kick Start your career prep with our Career Resources Center team through personal and center assessments concentration workshops and personalized advising.");
+      $('#pop1').html("National MBA Conferences. Personal Career Advising. Bagels Before Business: Meet and Network.  Resume Writing Workshops. Career Fairs & Evenets.");
+      $('#pop2').html("Network New York. Interview Prep & Informational Interviewing.");
+      $('#pop3').html("MBA Internship Interviewing. Career Fairs & Events. Bagels Before Business: Meet & Network.");
+      $('#pop4').html("MBA Internship: Whether you are advancing, switching or launching your career, our UBMBAs participate in a summer internship Networking Events Enjoy the Summer! Travel, relax, have fun!");
+      $('#pop5').html("Career Advising. Bagels Before Business: Meet & Netowrk. Resume Reviews. Interview Prep. MBA Recruiting. Job Offer Negotiations. ");
+      $('#pop6').show();
+      $('#pop6').html("Network New York. Career Advising. Resume Reviews. Interview Prep. MBA Recruiting. Job Offer Negotiations.");
+      $('#pop7').html("Career Advising. Bagels Before Business: Meet & Netowrk. Resume Reviews. Interview Prep. MBA Recruiting. Job Offer Negotiations. Launch your post-MBA Career!");
+    });
+
+  });
+</script>
+</html>

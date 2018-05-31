@@ -1,0 +1,234 @@
+.folder{
+  min-width: 1300px;
+  min-height: 500px;
+  width: 1300px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#myGanttChart{
+  width: 1300px;
+  height: 400px;
+  background-color: whitesmoke;
+}
+#tabMenu{
+  top: 0;
+  position: relative;
+  height: 8%;
+  left: 12.9%;
+  width: 87.1%;
+}
+.tab{
+  position: relative;
+  float: left;
+  top: 0;
+  height: 100%;
+  left: 2%;
+  width: 10%;
+  color: white;
+  font-size: medium;
+  background-color: GREY;;
+  border: 1px none black;
+  border-radius: 6px;
+  text-align: center;
+  cursor:pointer;
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+  display:inline-block;
+  max-width: 100px;
+}
+.tab:active {
+    color:blue;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+}
+#insideTheClassroom{
+  left: 0;
+  opacity: .7;
+}
+#alongsideTheClassroom{
+  left: 5%;
+}
+#outsideTheClassroom{
+  left: 10%;
+}
+#careerFocus{
+  left: 15%;
+}
+.bar{
+  position: absolute;
+  width: 10%;
+  height: 1%;
+  border: 1px none black;
+  border-radius: 6px;
+  clear: both;
+  margin: 1px 4px auto;
+  padding: 1%;
+  top: 20%;
+}
+.barSector{
+  height: 12.5%;
+  width : 100%;
+  position: relative;
+}
+.horizontalBar{
+  position: absolute;
+  height: 1%;
+  width: 100%;
+
+  background-color: black;
+}
+#indexLine{
+  width: 1%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+#summerBeforeYouStart{
+    background-color: #e56a54;
+    width: 5%;
+    left: 0;
+}
+#fallSemester0{
+  width: 10%;
+  background-color: #00a69c;
+  left: 7%;
+}
+#winterBreak0{
+  width: 7%;
+  background-color: #ffc72c;
+  left: 19%;
+}
+#springSemester0{
+  width: 10%;
+  background-color: #2f9fd0;
+  left: 28%;
+}
+#summerSession{
+  width:14%;
+  background-color: limegreen;
+  left: 40%;
+}
+#fallSemester1{
+  width: 14%;
+  background-color: darkorchid;
+  left: 56%;
+}
+#winterBreak1{
+  width: 5%;
+  background-color: blue;
+  left: 72%;
+}
+#springSemester1{
+  width:17%;
+  background-color: orange;
+  left: 79%;
+}
+#x-table{
+  position: relative;
+  width: 87%;
+  height: 100%;
+  float: right;
+}
+#y-table{
+  position: relative;
+  width: 13%;
+  height: 80%;
+  float: left;
+}
+#ySector{
+  width: 99%;
+  height: 100%;
+  float: left;
+}
+#verticalBreak{
+  width: 1%;
+  height: 102.7%;
+  background-color: black;
+  float: right;
+}
+#barTable{
+  position: relative;
+  height: 80%;
+  width: 100%;
+
+}
+#timeLine{
+  position: relative;
+  height: 20%;
+  width: 100%;
+  /* background-color: gainsboro; */
+}
+#year1,#year2{
+  float: left;
+  position: relative;
+  width: 50%;
+  height: auto;
+}
+.month{
+  float: left;
+  position: relative;
+  width: 8%;
+  height: auto;
+  font-size: medium;
+}
+.academicSector{
+  position: absolute;
+  width: auto;
+  height: 100%;
+  top: 10%;
+
+}
+.semesterSector{
+  position: relative;
+  width: 100%;
+  height: 12.5%;
+}
+#mbaYear{
+  position: relative;
+  left: 50%;
+}
+
+.popUp{
+  visibility: hidden;
+  width: 25%;
+  height: auto;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 100%;
+  margin-left: -80px;
+}
+#pop0{
+  left: 20%;
+}
+#pop1{
+  left: 30.5%;
+}
+#pop2{
+  left: 38.5%;
+}
+#pop3{
+  left: 48.5%;
+}
+#pop4{
+  left: 62.5%;
+  width: 25%;
+}
+#pop5{
+  left: 76%;
+}
+#pop6{
+  position: absolute;
+  left: 82%;
+  top: -200%;
+}
+#pop7{
+  position: absolute;
+  left: 61%;
+  top: -160%;
+}
